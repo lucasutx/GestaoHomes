@@ -86,13 +86,12 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = SystemColors.GradientInactiveCaption;
-            label3.BorderStyle = BorderStyle.Fixed3D;
-            label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.BackColor = SystemColors.ControlLight;
+            label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point(148, 51);
+            label3.Location = new Point(0, 0);
             label3.Name = "label3";
-            label3.Size = new Size(227, 34);
+            label3.Size = new Size(254, 37);
             label3.TabIndex = 14;
             label3.Text = "Cadastro Despesas";
             // 

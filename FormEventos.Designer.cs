@@ -112,12 +112,11 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = SystemColors.ControlLight;
-            label4.BorderStyle = BorderStyle.Fixed3D;
-            label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(176, 30);
+            label4.Location = new Point(-2, 0);
             label4.Name = "label4";
-            label4.Size = new Size(217, 34);
+            label4.Size = new Size(241, 37);
             label4.TabIndex = 7;
             label4.Text = "Cadastro  Eventos";
             // 
