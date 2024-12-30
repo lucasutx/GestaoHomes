@@ -111,7 +111,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.BackColor = SystemColors.GradientInactiveCaption;
+            label4.BackColor = SystemColors.ControlLight;
             label4.BorderStyle = BorderStyle.Fixed3D;
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ActiveCaptionText;
