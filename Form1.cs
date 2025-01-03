@@ -24,5 +24,11 @@ namespace Homes2
             FormValorLiquido formValorLiquido = new FormValorLiquido();
             formValorLiquido.Show();
         }
+
+        private void btnAgendamentos_Click(object sender, EventArgs e)
+        {
+            Agendamentos formAgendamentos = new Agendamentos();
+            formAgendamentos.Show();
+        }
     }
 }

@@ -32,14 +32,15 @@
             btnDespesa = new Button();
             btnValorLq = new Button();
             label1 = new Label();
+            btnAgendamentos = new Button();
             SuspendLayout();
             // 
             // btnEvento
             // 
             btnEvento.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEvento.Location = new Point(115, 81);
+            btnEvento.Location = new Point(12, 95);
             btnEvento.Name = "btnEvento";
-            btnEvento.Size = new Size(240, 72);
+            btnEvento.Size = new Size(190, 62);
             btnEvento.TabIndex = 0;
             btnEvento.Text = "Cadastro de Eventos ";
             btnEvento.UseVisualStyleBackColor = true;
@@ -48,9 +49,9 @@
             // btnDespesa
             // 
             btnDespesa.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDespesa.Location = new Point(115, 194);
+            btnDespesa.Location = new Point(258, 95);
             btnDespesa.Name = "btnDespesa";
-            btnDespesa.Size = new Size(240, 75);
+            btnDespesa.Size = new Size(191, 62);
             btnDespesa.TabIndex = 1;
             btnDespesa.Text = "Cadastro de Despesas";
             btnDespesa.UseVisualStyleBackColor = true;
@@ -59,9 +60,9 @@
             // btnValorLq
             // 
             btnValorLq.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnValorLq.Location = new Point(115, 314);
+            btnValorLq.Location = new Point(12, 187);
             btnValorLq.Name = "btnValorLq";
-            btnValorLq.Size = new Size(240, 78);
+            btnValorLq.Size = new Size(190, 65);
             btnValorLq.TabIndex = 2;
             btnValorLq.Text = "Valor Liquído ";
             btnValorLq.UseVisualStyleBackColor = true;
@@ -78,16 +79,30 @@
             label1.TabIndex = 3;
             label1.Text = "HOME´S PIZZARIA";
             // 
+            // btnAgendamentos
+            // 
+            btnAgendamentos.FlatAppearance.BorderSize = 5;
+            btnAgendamentos.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnAgendamentos.Location = new Point(259, 187);
+            btnAgendamentos.Name = "btnAgendamentos";
+            btnAgendamentos.Size = new Size(190, 65);
+            btnAgendamentos.TabIndex = 4;
+            btnAgendamentos.Text = "Agendamentos";
+            btnAgendamentos.UseVisualStyleBackColor = true;
+            btnAgendamentos.Click += btnAgendamentos_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(470, 447);
+            ClientSize = new Size(476, 308);
+            Controls.Add(btnAgendamentos);
             Controls.Add(label1);
             Controls.Add(btnValorLq);
             Controls.Add(btnDespesa);
             Controls.Add(btnEvento);
+            Cursor = Cursors.Hand;
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -100,5 +115,6 @@
         private Button btnDespesa;
         private Button btnValorLq;
         private Label label1;
+        private Button btnAgendamentos;
     }
 }
