@@ -40,6 +40,8 @@
             label5 = new Label();
             label6 = new Label();
             btnCadastrar = new Button();
+            txtValor = new TextBox();
+            label7 = new Label();
             SuspendLayout();
             // 
             // label4
@@ -146,7 +148,7 @@
             // btnCadastrar
             // 
             btnCadastrar.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCadastrar.Location = new Point(207, 281);
+            btnCadastrar.Location = new Point(204, 324);
             btnCadastrar.Name = "btnCadastrar";
             btnCadastrar.Size = new Size(87, 32);
             btnCadastrar.TabIndex = 19;
@@ -154,11 +156,30 @@
             btnCadastrar.UseVisualStyleBackColor = true;
             btnCadastrar.Click += btnCadastrar_Click;
             // 
+            // txtValor
+            // 
+            txtValor.Location = new Point(184, 276);
+            txtValor.Name = "txtValor";
+            txtValor.Size = new Size(139, 23);
+            txtValor.TabIndex = 20;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label7.Location = new Point(59, 282);
+            label7.Name = "label7";
+            label7.Size = new Size(38, 17);
+            label7.TabIndex = 21;
+            label7.Text = "Valor";
+            // 
             // Agendamentos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(432, 368);
+            Controls.Add(label7);
+            Controls.Add(txtValor);
             Controls.Add(btnCadastrar);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -191,5 +212,7 @@
         private Label label5;
         private Label label6;
         private Button btnCadastrar;
+        private TextBox txtValor;
+        private Label label7;
     }
 }

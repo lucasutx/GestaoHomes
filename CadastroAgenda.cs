@@ -13,16 +13,17 @@ namespace Homes2
         Conexao conexao = new Conexao();
         SqlCommand cmd = new SqlCommand();
         
-        public CadastroAgenda(string nome, string data_evento, string telefone, string endereco, string status)
+        public CadastroAgenda(string nome, string data_evento, string telefone, string endereco, string status, string valor)
         {
-            cmd.CommandText = "Insert into Agendamento (nomeCliente,data_Evento,telefone,endereco,status_Evento) " +
-                "values (@nome,@data,@telefone,@endereco,@status)";
+            cmd.CommandText = "Insert into Agendamento (nomeCliente,data_Evento,telefone,endereco,status_Evento,valor) " +
+                "values (@nome,@data,@telefone,@endereco,@status,@valor)";
 
             cmd.Parameters.AddWithValue("@nome", nome);
             cmd.Parameters.AddWithValue("@data", data_evento);
             cmd.Parameters.AddWithValue("@telefone", telefone);
             cmd.Parameters.AddWithValue("@endereco", endereco);
             cmd.Parameters.AddWithValue("@status", status);
+            cmd.Parameters.AddWithValue("@valor", valor);
 
             try
             {

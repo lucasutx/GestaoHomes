@@ -28,19 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             btnEvento = new Button();
             btnDespesa = new Button();
             btnValorLq = new Button();
-            label1 = new Label();
             btnAgendamentos = new Button();
+            pictureBox1 = new PictureBox();
+            dateTimePicker1 = new DateTimePicker();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnEvento
             // 
             btnEvento.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnEvento.Location = new Point(12, 95);
+            btnEvento.Location = new Point(504, 411);
             btnEvento.Name = "btnEvento";
-            btnEvento.Size = new Size(190, 62);
+            btnEvento.Size = new Size(11, 15);
             btnEvento.TabIndex = 0;
             btnEvento.Text = "Cadastro de Eventos ";
             btnEvento.UseVisualStyleBackColor = true;
@@ -49,9 +53,9 @@
             // btnDespesa
             // 
             btnDespesa.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDespesa.Location = new Point(258, 95);
+            btnDespesa.Location = new Point(247, 145);
             btnDespesa.Name = "btnDespesa";
-            btnDespesa.Size = new Size(191, 62);
+            btnDespesa.Size = new Size(177, 61);
             btnDespesa.TabIndex = 1;
             btnDespesa.Text = "Cadastro de Despesas";
             btnDespesa.UseVisualStyleBackColor = true;
@@ -60,51 +64,73 @@
             // btnValorLq
             // 
             btnValorLq.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnValorLq.Location = new Point(12, 187);
+            btnValorLq.Location = new Point(28, 257);
             btnValorLq.Name = "btnValorLq";
-            btnValorLq.Size = new Size(190, 65);
+            btnValorLq.Size = new Size(177, 65);
             btnValorLq.TabIndex = 2;
             btnValorLq.Text = "Valor Liquído ";
             btnValorLq.UseVisualStyleBackColor = true;
             btnValorLq.Click += btnValorLq_Click;
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.AliceBlue;
-            label1.Font = new Font("Tahoma", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(95, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(272, 33);
-            label1.TabIndex = 3;
-            label1.Text = "HOME´S PIZZARIA";
-            // 
             // btnAgendamentos
             // 
             btnAgendamentos.FlatAppearance.BorderSize = 5;
             btnAgendamentos.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnAgendamentos.Location = new Point(259, 187);
+            btnAgendamentos.Location = new Point(28, 145);
             btnAgendamentos.Name = "btnAgendamentos";
-            btnAgendamentos.Size = new Size(190, 65);
+            btnAgendamentos.Size = new Size(177, 61);
             btnAgendamentos.TabIndex = 4;
             btnAgendamentos.Text = "Agendamentos";
             btnAgendamentos.UseVisualStyleBackColor = true;
             btnAgendamentos.Click += btnAgendamentos_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.ActiveCaption;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(321, 45);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(37, 23);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Format = DateTimePickerFormat.Short;
+            dateTimePicker1.Location = new Point(168, 45);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(147, 23);
+            dateTimePicker1.TabIndex = 7;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(193, 25);
+            label1.Name = "label1";
+            label1.Size = new Size(113, 17);
+            label1.TabIndex = 8;
+            label1.Text = "Pesquisar Eventos";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(476, 308);
-            Controls.Add(btnAgendamentos);
+            ClientSize = new Size(490, 375);
             Controls.Add(label1);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(pictureBox1);
+            Controls.Add(btnAgendamentos);
             Controls.Add(btnValorLq);
             Controls.Add(btnDespesa);
             Controls.Add(btnEvento);
             Cursor = Cursors.Hand;
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -114,7 +140,9 @@
         private Button btnEvento;
         private Button btnDespesa;
         private Button btnValorLq;
-        private Label label1;
         private Button btnAgendamentos;
+        private PictureBox pictureBox1;
+        private DateTimePicker dateTimePicker1;
+        private Label label1;
     }
 }

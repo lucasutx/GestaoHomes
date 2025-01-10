@@ -29,7 +29,7 @@ namespace Homes2
 
             if (resposta == DialogResult.Yes)
             {
-                CadastroAgenda ag = new CadastroAgenda(txtNome.Text, data.Text, txtTelefone.Text, txtEndereco.Text, cbStatus.Text);
+                CadastroAgenda ag = new CadastroAgenda(txtNome.Text, data.Text, txtTelefone.Text, txtEndereco.Text, cbStatus.Text,txtValor.Text);
                 MessageBox.Show(ag.msg);
                 txtNome.Text = "";
                 data.Text = "";
@@ -44,6 +44,7 @@ namespace Homes2
                 txtTelefone.Text = "";
                 txtEndereco.Text = "";
                 cbStatus.Text = "";
+                txtValor.Text = "";
             }
             
         }

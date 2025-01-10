@@ -39,7 +39,7 @@
             // cbCategoria
             // 
             cbCategoria.FormattingEnabled = true;
-            cbCategoria.Items.AddRange(new object[] { "Salários", "Gás", "Material", "Gasolina", "Luz ", "Água", "Uber" });
+            cbCategoria.Items.AddRange(new object[] { "Salários", "Gás", "Mussarela", "Ingredientes( Geral )", "Verdura", "Gasolina", "Uber" });
             cbCategoria.Location = new Point(186, 140);
             cbCategoria.Name = "cbCategoria";
             cbCategoria.Size = new Size(142, 23);
