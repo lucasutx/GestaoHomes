@@ -33,10 +33,10 @@
             btnDespesa = new Button();
             btnValorLq = new Button();
             btnAgendamentos = new Button();
-            pictureBox1 = new PictureBox();
-            dateTimePicker1 = new DateTimePicker();
+            pb1 = new PictureBox();
+            dt1 = new DateTimePicker();
             label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pb1).BeginInit();
             SuspendLayout();
             // 
             // btnEvento
@@ -53,7 +53,7 @@
             // btnDespesa
             // 
             btnDespesa.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnDespesa.Location = new Point(247, 145);
+            btnDespesa.Location = new Point(262, 145);
             btnDespesa.Name = "btnDespesa";
             btnDespesa.Size = new Size(177, 61);
             btnDespesa.TabIndex = 1;
@@ -64,7 +64,7 @@
             // btnValorLq
             // 
             btnValorLq.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnValorLq.Location = new Point(28, 257);
+            btnValorLq.Location = new Point(147, 237);
             btnValorLq.Name = "btnValorLq";
             btnValorLq.Size = new Size(177, 65);
             btnValorLq.TabIndex = 2;
@@ -84,33 +84,35 @@
             btnAgendamentos.UseVisualStyleBackColor = true;
             btnAgendamentos.Click += btnAgendamentos_Click;
             // 
-            // pictureBox1
+            // pb1
             // 
-            pictureBox1.BackColor = SystemColors.ActiveCaption;
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(321, 45);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(37, 23);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
+            pb1.BackColor = Color.SeaShell;
+            pb1.BackgroundImage = (Image)resources.GetObject("pb1.BackgroundImage");
+            pb1.Image = (Image)resources.GetObject("pb1.Image");
+            pb1.Location = new Point(330, 45);
+            pb1.Name = "pb1";
+            pb1.Size = new Size(37, 23);
+            pb1.SizeMode = PictureBoxSizeMode.Zoom;
+            pb1.TabIndex = 6;
+            pb1.TabStop = false;
+            pb1.Click += pb1_Click;
             // 
-            // dateTimePicker1
+            // dt1
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(168, 45);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(147, 23);
-            dateTimePicker1.TabIndex = 7;
+            dt1.Format = DateTimePickerFormat.Short;
+            dt1.Location = new Point(156, 45);
+            dt1.Name = "dt1";
+            dt1.Size = new Size(168, 23);
+            dt1.TabIndex = 7;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(193, 25);
+            label1.BackColor = SystemColors.ControlLight;
+            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(174, 21);
             label1.Name = "label1";
-            label1.Size = new Size(113, 17);
+            label1.Size = new Size(139, 21);
             label1.TabIndex = 8;
             label1.Text = "Pesquisar Eventos";
             // 
@@ -119,10 +121,10 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(490, 375);
+            ClientSize = new Size(477, 375);
             Controls.Add(label1);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(pictureBox1);
+            Controls.Add(dt1);
+            Controls.Add(pb1);
             Controls.Add(btnAgendamentos);
             Controls.Add(btnValorLq);
             Controls.Add(btnDespesa);
@@ -130,7 +132,7 @@
             Cursor = Cursors.Hand;
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pb1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -141,8 +143,8 @@
         private Button btnDespesa;
         private Button btnValorLq;
         private Button btnAgendamentos;
-        private PictureBox pictureBox1;
-        private DateTimePicker dateTimePicker1;
+        private PictureBox pb1;
+        private DateTimePicker dt1;
         private Label label1;
     }
 }
