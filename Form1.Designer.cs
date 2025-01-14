@@ -86,7 +86,7 @@
             // 
             // pb1
             // 
-            pb1.BackColor = Color.SeaShell;
+            pb1.BackColor = Color.White;
             pb1.BackgroundImage = (Image)resources.GetObject("pb1.BackgroundImage");
             pb1.Image = (Image)resources.GetObject("pb1.Image");
             pb1.Location = new Point(330, 45);
@@ -108,11 +108,12 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.ControlLight;
+            label1.BackColor = SystemColors.MenuBar;
+            label1.BorderStyle = BorderStyle.Fixed3D;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(174, 21);
+            label1.Location = new Point(170, 19);
             label1.Name = "label1";
-            label1.Size = new Size(139, 21);
+            label1.Size = new Size(141, 23);
             label1.TabIndex = 8;
             label1.Text = "Pesquisar Eventos";
             // 

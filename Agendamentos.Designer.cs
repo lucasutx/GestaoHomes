@@ -78,6 +78,7 @@
             txtTelefone.Name = "txtTelefone";
             txtTelefone.Size = new Size(139, 23);
             txtTelefone.TabIndex = 11;
+            txtTelefone.TextChanged += txtTelefone_TextChanged;
             // 
             // txtEndereco
             // 
@@ -162,6 +163,7 @@
             txtValor.Name = "txtValor";
             txtValor.Size = new Size(139, 23);
             txtValor.TabIndex = 20;
+            txtValor.TextChanged += txtValor_TextChanged;
             // 
             // label7
             // 
