@@ -36,6 +36,7 @@ namespace Homes2
                 txtTelefone.Text = "";
                 txtEndereco.Text = "";
                 cbStatus.Text = "";
+                txtValor.Text = "";
             }
             else
             {

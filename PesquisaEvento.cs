@@ -10,6 +10,7 @@ namespace Homes2
         public string msg = "";
         public string Resultado1 = "";
         public string Resultado2 = "";
+        public Dictionary<string, string> Resultados = new Dictionary<string, string>();
 
         public PesquisaEvento(string data_Evento)
         {
@@ -24,11 +25,17 @@ namespace Homes2
                     // Verifica se há linhas antes de tentar ler
                     if (reader.HasRows)
                     {
-                        if (reader.Read())
+                        while (reader.Read())
+
                         {
-                            // Ajuste o nome da coluna conforme a tabela do banco
-                            Resultado1 = reader["nomeCliente"].ToString();
-                            Resultado2 = reader["endereco"].ToString();
+                            Dictionary<string, string> linha = new Dictionary<string, string>();
+
+                            string colunaNome = reader.GetName(1);
+                            string colunaEndereco = reader.GetName(4);// Nome da coluna
+                            string valorNome = reader[colunaNome]?.ToString() ?? "";
+                            string valorEndereco = reader[colunaEndereco]?.ToString() ?? "";
+
+                            Resultados[valorNome] = valorEndereco;
 
                         }
                     }

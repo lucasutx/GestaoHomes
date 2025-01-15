@@ -62,7 +62,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(59, 152);
+            label2.Location = new Point(52, 129);
             label2.Name = "label2";
             label2.Size = new Size(79, 21);
             label2.TabIndex = 17;
@@ -83,7 +83,7 @@
             dtFim.AllowDrop = true;
             dtFim.CalendarMonthBackground = SystemColors.ButtonHighlight;
             dtFim.Format = DateTimePickerFormat.Short;
-            dtFim.Location = new Point(163, 152);
+            dtFim.Location = new Point(163, 129);
             dtFim.Name = "dtFim";
             dtFim.Size = new Size(110, 23);
             dtFim.TabIndex = 19;
@@ -91,7 +91,7 @@
             // btnCalcular
             // 
             btnCalcular.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCalcular.Location = new Point(172, 206);
+            btnCalcular.Location = new Point(175, 193);
             btnCalcular.Name = "btnCalcular";
             btnCalcular.Size = new Size(87, 28);
             btnCalcular.TabIndex = 20;
