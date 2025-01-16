@@ -96,5 +96,10 @@ namespace Homes2
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            GridDaAgenda formGrid = new GridDaAgenda();
+            formGrid.Show();
+        }
     }
 }

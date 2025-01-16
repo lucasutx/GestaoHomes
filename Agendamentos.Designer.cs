@@ -42,6 +42,7 @@
             btnCadastrar = new Button();
             txtValor = new TextBox();
             label7 = new Label();
+            button1 = new Button();
             SuspendLayout();
             // 
             // label4
@@ -60,21 +61,21 @@
             // 
             data.CalendarTrailingForeColor = SystemColors.MenuBar;
             data.Format = DateTimePickerFormat.Short;
-            data.Location = new Point(184, 85);
+            data.Location = new Point(137, 85);
             data.Name = "data";
             data.Size = new Size(139, 23);
             data.TabIndex = 9;
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(184, 120);
+            txtNome.Location = new Point(137, 120);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(139, 23);
             txtNome.TabIndex = 10;
             // 
             // txtTelefone
             // 
-            txtTelefone.Location = new Point(184, 159);
+            txtTelefone.Location = new Point(137, 159);
             txtTelefone.Name = "txtTelefone";
             txtTelefone.Size = new Size(139, 23);
             txtTelefone.TabIndex = 11;
@@ -82,7 +83,7 @@
             // 
             // txtEndereco
             // 
-            txtEndereco.Location = new Point(184, 197);
+            txtEndereco.Location = new Point(137, 197);
             txtEndereco.Name = "txtEndereco";
             txtEndereco.Size = new Size(139, 23);
             txtEndereco.TabIndex = 12;
@@ -91,7 +92,7 @@
             // 
             cbStatus.FormattingEnabled = true;
             cbStatus.Items.AddRange(new object[] { "Confirmado\t", "Pendente" });
-            cbStatus.Location = new Point(184, 237);
+            cbStatus.Location = new Point(137, 237);
             cbStatus.Name = "cbStatus";
             cbStatus.Size = new Size(139, 23);
             cbStatus.TabIndex = 13;
@@ -100,7 +101,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(59, 89);
+            label1.Location = new Point(25, 89);
             label1.Name = "label1";
             label1.Size = new Size(78, 17);
             label1.TabIndex = 14;
@@ -110,7 +111,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.Location = new Point(59, 126);
+            label2.Location = new Point(25, 126);
             label2.Name = "label2";
             label2.Size = new Size(44, 17);
             label2.TabIndex = 15;
@@ -120,7 +121,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(59, 165);
+            label3.Location = new Point(25, 165);
             label3.Name = "label3";
             label3.Size = new Size(57, 17);
             label3.TabIndex = 16;
@@ -130,7 +131,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.Location = new Point(59, 203);
+            label5.Location = new Point(25, 203);
             label5.Name = "label5";
             label5.Size = new Size(63, 17);
             label5.TabIndex = 17;
@@ -140,7 +141,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.Location = new Point(59, 243);
+            label6.Location = new Point(25, 243);
             label6.Name = "label6";
             label6.Size = new Size(106, 17);
             label6.TabIndex = 18;
@@ -149,9 +150,9 @@
             // btnCadastrar
             // 
             btnCadastrar.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCadastrar.Location = new Point(204, 324);
+            btnCadastrar.Location = new Point(162, 305);
             btnCadastrar.Name = "btnCadastrar";
-            btnCadastrar.Size = new Size(87, 32);
+            btnCadastrar.Size = new Size(88, 26);
             btnCadastrar.TabIndex = 19;
             btnCadastrar.Text = "Cadastrar";
             btnCadastrar.UseVisualStyleBackColor = true;
@@ -159,7 +160,7 @@
             // 
             // txtValor
             // 
-            txtValor.Location = new Point(184, 276);
+            txtValor.Location = new Point(137, 276);
             txtValor.Name = "txtValor";
             txtValor.Size = new Size(139, 23);
             txtValor.TabIndex = 20;
@@ -169,17 +170,33 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label7.Location = new Point(59, 282);
+            label7.Location = new Point(31, 282);
             label7.Name = "label7";
             label7.Size = new Size(38, 17);
             label7.TabIndex = 21;
             label7.Text = "Valor";
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.ControlLight;
+            button1.BackgroundImageLayout = ImageLayout.Center;
+            button1.Cursor = Cursors.Hand;
+            button1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.ImageAlign = ContentAlignment.TopCenter;
+            button1.Location = new Point(290, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(140, 25);
+            button1.TabIndex = 22;
+            button1.Text = "Mostrar Todos Eventos ";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Agendamentos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(432, 368);
+            Controls.Add(button1);
             Controls.Add(label7);
             Controls.Add(txtValor);
             Controls.Add(btnCadastrar);
@@ -216,5 +233,6 @@
         private Button btnCadastrar;
         private TextBox txtValor;
         private Label label7;
+        private Button button1;
     }
 }
