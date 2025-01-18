@@ -75,7 +75,7 @@
             dtInicio.Format = DateTimePickerFormat.Short;
             dtInicio.Location = new Point(163, 82);
             dtInicio.Name = "dtInicio";
-            dtInicio.Size = new Size(110, 23);
+            dtInicio.Size = new Size(136, 23);
             dtInicio.TabIndex = 18;
             // 
             // dtFim
@@ -85,17 +85,17 @@
             dtFim.Format = DateTimePickerFormat.Short;
             dtFim.Location = new Point(163, 129);
             dtFim.Name = "dtFim";
-            dtFim.Size = new Size(110, 23);
+            dtFim.Size = new Size(136, 23);
             dtFim.TabIndex = 19;
             // 
             // btnCalcular
             // 
             btnCalcular.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCalcular.Location = new Point(175, 193);
+            btnCalcular.Location = new Point(163, 170);
             btnCalcular.Name = "btnCalcular";
-            btnCalcular.Size = new Size(87, 28);
+            btnCalcular.Size = new Size(129, 29);
             btnCalcular.TabIndex = 20;
-            btnCalcular.Text = "Calcular";
+            btnCalcular.Text = "Gerar Relatório ";
             btnCalcular.UseVisualStyleBackColor = true;
             btnCalcular.Click += btnCalcular_Click;
             // 
