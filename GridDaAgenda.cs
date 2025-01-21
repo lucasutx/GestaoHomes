@@ -46,9 +46,10 @@ namespace Homes2
             DataTable dt = new DataTable();
             cmd.CommandText = "SELECT * FROM Agendamento order by data_evento";
 
-            dt.Columns.Add("Nome", typeof(string));
+            dt.Columns.Add("ID", typeof(string));
+            dt.Columns.Add("NOME", typeof(string));
             dt.Columns.Add("Data Evento", typeof(string));
-            dt.Columns.Add("Valor", typeof(string));
+            dt.Columns.Add("VALOR", typeof(string));
 
 
             dataGridView1.DataSource = dt;
@@ -65,15 +66,18 @@ namespace Homes2
 
                         {
                             Dictionary<string, string> linha = new Dictionary<string, string>();
-
+                            
+                            string colunaId = reader.GetName(0);
                             string colunaNome = reader.GetName(1);
                             string colunaData = reader.GetName(2);// Nome da coluna
                             string colunaValor = reader.GetName(6);
+
+                            string valorID = reader[colunaId]?.ToString() ?? "";
                             string valorNome = reader[colunaNome]?.ToString() ?? "";
                             string valorData = reader[colunaData]?.ToString() ?? "";
                             string valor = reader[colunaValor]?.ToString() ?? "";
 
-                            dt.Rows.Add(valorNome, valorData, valor);
+                            dt.Rows.Add(valorID,valorNome, valorData, valor);
                             dataGridView1.DataSource = dt;
 
                         }
@@ -82,11 +86,42 @@ namespace Homes2
 
                 // Desconecta fora do using
                 conexao.Desconectar();
-                
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if(dataGridView1.SelectedRows.Count>0)
+            {
+                int idSelecionado = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["ID"].Value);
+
+                var confirmacao = MessageBox.Show("Deseja realmente excluir este registro?", "Confirmação", MessageBoxButtons.YesNo);
+                if (confirmacao == DialogResult.Yes)
+                {
+                    // Remove o registro do banco de dados
+                    SqlCommand cmd = new SqlCommand();
+                    Conexao conexao = new Conexao();
+                    cmd.Connection = conexao.Conectar();
+                    
+                       cmd.CommandText = "DELETE FROM Agendamento WHERE Id = @Id";
+
+                            cmd.Parameters.AddWithValue("@Id", idSelecionado);
+                            cmd.ExecuteNonQuery();
+
+                    // Remove a linha do DataGridView
+                    dataGridView1.Rows.RemoveAt(dataGridView1.SelectedRows[0].Index);
+
+                    MessageBox.Show("Registro excluído com sucesso.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Selecione uma linha para excluir.");
             }
         }
     }

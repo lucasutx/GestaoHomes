@@ -43,6 +43,7 @@
             button1.TabIndex = 0;
             button1.Text = "Excluir";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -58,9 +59,9 @@
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(144, 76);
+            dataGridView1.Location = new Point(49, 76);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(358, 257);
+            dataGridView1.Size = new Size(462, 257);
             dataGridView1.TabIndex = 2;
             dataGridView1.VirtualMode = true;
             // 
