@@ -31,7 +31,6 @@
             button1 = new Button();
             button2 = new Button();
             dataGridView1 = new DataGridView();
-            button3 = new Button();
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -57,19 +56,10 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(49, 169);
+            dataGridView1.Location = new Point(129, 159);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(494, 175);
+            dataGridView1.Size = new Size(358, 175);
             dataGridView1.TabIndex = 2;
-            // 
-            // button3
-            // 
-            button3.Location = new Point(559, 299);
-            button3.Name = "button3";
-            button3.Size = new Size(89, 28);
-            button3.TabIndex = 3;
-            button3.Text = "Filtrar";
-            button3.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -89,12 +79,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(665, 375);
             Controls.Add(label1);
-            Controls.Add(button3);
             Controls.Add(dataGridView1);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "GridDaAgenda";
             Text = "GridDaAgenda";
+            Load += GridDaAgenda_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -105,7 +95,6 @@
         private Button button1;
         private Button button2;
         private DataGridView dataGridView1;
-        private Button button3;
         private Label label1;
     }
 }
