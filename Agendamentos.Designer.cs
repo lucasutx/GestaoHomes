@@ -183,7 +183,7 @@
             button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ImageAlign = ContentAlignment.TopCenter;
-            button1.Location = new Point(290, 12);
+            button1.Location = new Point(280, 331);
             button1.Name = "button1";
             button1.Size = new Size(140, 25);
             button1.TabIndex = 22;

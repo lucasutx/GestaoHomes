@@ -31,13 +31,13 @@
             button1 = new Button();
             button2 = new Button();
             dataGridView1 = new DataGridView();
-            label1 = new Label();
+            label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(559, 189);
+            button1.Location = new Point(534, 138);
             button1.Name = "button1";
             button1.Size = new Size(89, 29);
             button1.TabIndex = 0;
@@ -46,7 +46,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(559, 244);
+            button2.Location = new Point(534, 203);
             button2.Name = "button2";
             button2.Size = new Size(89, 28);
             button2.TabIndex = 1;
@@ -55,30 +55,33 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
+            dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(129, 159);
+            dataGridView1.Location = new Point(144, 76);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(358, 175);
+            dataGridView1.Size = new Size(358, 257);
             dataGridView1.TabIndex = 2;
+            dataGridView1.VirtualMode = true;
             // 
-            // label1
+            // label3
             // 
-            label1.AutoSize = true;
-            label1.BackColor = SystemColors.ControlLight;
-            label1.BorderStyle = BorderStyle.Fixed3D;
-            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(232, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(163, 32);
-            label1.TabIndex = 4;
-            label1.Text = "Grid De Eventos";
+            label3.AutoSize = true;
+            label3.BackColor = SystemColors.ControlLight;
+            label3.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.ForeColor = SystemColors.ActiveCaptionText;
+            label3.Location = new Point(1, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(175, 37);
+            label3.TabIndex = 15;
+            label3.Text = "Grid Eventos";
             // 
             // GridDaAgenda
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(665, 375);
-            Controls.Add(label1);
+            Controls.Add(label3);
             Controls.Add(dataGridView1);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -95,6 +98,6 @@
         private Button button1;
         private Button button2;
         private DataGridView dataGridView1;
-        private Label label1;
+        private Label label3;
     }
 }

@@ -44,7 +44,7 @@ namespace Homes2
             Conexao conexao = new Conexao();
             SqlCommand cmd = new SqlCommand();
             DataTable dt = new DataTable();
-            cmd.CommandText = "SELECT * FROM Agendamento";
+            cmd.CommandText = "SELECT * FROM Agendamento order by data_evento";
 
             dt.Columns.Add("Nome", typeof(string));
             dt.Columns.Add("Data Evento", typeof(string));
