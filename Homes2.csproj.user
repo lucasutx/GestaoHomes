@@ -16,5 +16,16 @@
     <Compile Update="FormValorLiquido.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GridDaAgenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Form1.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Update="FormValorLiquido.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

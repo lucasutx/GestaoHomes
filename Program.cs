@@ -1,3 +1,4 @@
+
 namespace Homes2
 {
     internal static class Program

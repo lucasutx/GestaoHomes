@@ -27,3 +27,5 @@ C:\Users\Lucas\source\repos\Homes2\Homes2\obj\Debug\net8.0-windows\Homes2.csproj
 C:\Users\Lucas\source\repos\Homes2\Homes2\obj\Debug\net8.0-windows\Homes2.csproj.Up2Date
 C:\Users\Lucas\source\repos\Homes2\Homes2\obj\Debug\net8.0-windows\Homes2.sourcelink.json
 C:\Users\Lucas\source\repos\Homes2\Homes2\obj\Debug\net8.0-windows\Homes2.Properties.Resources.resources
+C:\Users\Lucas\source\repos\Homes2\Homes2\obj\Debug\net8.0-windows\Homes2.Agendamentos.resources
+C:\Users\Lucas\source\repos\Homes2\Homes2\obj\Debug\net8.0-windows\Homes2.GridDaAgenda.resources
