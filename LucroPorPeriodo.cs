@@ -18,7 +18,7 @@ namespace Homes2
         public LucroPorPeriodo(String dataInicio, String Datafim)
         {
             // Corrigindo a forma de passar os parâmetros
-            cmd.CommandText = "SELECT SUM(preco) FROM Evento WHERE Data_Cadastro BETWEEN @dataInicio AND @dataFim";
+            cmd.CommandText = "SELECT SUM(preco) FROM Agendamento WHERE Data_Cadastro BETWEEN @dataInicio AND @dataFim";
             cmd2.CommandText = "SELECT SUM(valor) FROM Despesas WHERE data BETWEEN @dataInicio AND @dataFim";
 
             // Convertendo as strings para DateTime, para evitar problemas de formato

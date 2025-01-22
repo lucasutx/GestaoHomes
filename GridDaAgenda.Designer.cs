@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             button1 = new Button();
-            button2 = new Button();
             dataGridView1 = new DataGridView();
             label3 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -37,7 +36,11 @@
             // 
             // button1
             // 
-            button1.Location = new Point(534, 138);
+            button1.Cursor = Cursors.Hand;
+            button1.FlatStyle = FlatStyle.System;
+            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = SystemColors.ControlText;
+            button1.Location = new Point(564, 44);
             button1.Name = "button1";
             button1.Size = new Size(89, 29);
             button1.TabIndex = 0;
@@ -45,23 +48,14 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
-            // 
-            button2.Location = new Point(534, 203);
-            button2.Name = "button2";
-            button2.Size = new Size(89, 28);
-            button2.TabIndex = 1;
-            button2.Text = "Alterar";
-            button2.UseVisualStyleBackColor = true;
-            // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = SystemColors.ButtonHighlight;
             dataGridView1.CellBorderStyle = DataGridViewCellBorderStyle.Raised;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(49, 76);
+            dataGridView1.Location = new Point(70, 75);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(462, 257);
+            dataGridView1.Size = new Size(442, 257);
             dataGridView1.TabIndex = 2;
             dataGridView1.VirtualMode = true;
             // 
@@ -73,9 +67,9 @@
             label3.ForeColor = SystemColors.ActiveCaptionText;
             label3.Location = new Point(1, 0);
             label3.Name = "label3";
-            label3.Size = new Size(175, 37);
+            label3.Size = new Size(278, 37);
             label3.TabIndex = 15;
-            label3.Text = "Grid Eventos";
+            label3.Text = "Eventos Cadastrados";
             // 
             // GridDaAgenda
             // 
@@ -84,7 +78,6 @@
             ClientSize = new Size(665, 375);
             Controls.Add(label3);
             Controls.Add(dataGridView1);
-            Controls.Add(button2);
             Controls.Add(button1);
             Name = "GridDaAgenda";
             Text = "GridDaAgenda";
@@ -97,7 +90,6 @@
         #endregion
 
         private Button button1;
-        private Button button2;
         private DataGridView dataGridView1;
         private Label label3;
     }
