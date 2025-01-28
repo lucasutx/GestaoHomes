@@ -165,6 +165,7 @@ namespace Homes2
 
                         // Adiciona os totais e o lucro líquido
                         decimal lucroLiquido = totalReceitas - totalDespesas;
+                        decimal porcentagemLucro = totalReceitas > 0 ? (lucroLiquido / totalReceitas) * 100 : 0; // Evita divisão por zero
 
                         document.Add(new Paragraph($"Total de Receitas: {totalReceitas:C}")
                             .SetTextAlignment(TextAlignment.LEFT)
@@ -181,6 +182,11 @@ namespace Homes2
                             .SetFontSize(12)
                             
                             .SetMarginBottom(10));
+
+                        document.Add(new Paragraph($"Porcentagem de Lucro: {porcentagemLucro:F2}%")
+                        .SetTextAlignment(TextAlignment.LEFT)
+                        .SetFontSize(12)
+                        .SetMarginBottom(10));
 
                         // Mensagem final e fechamento do documento
                         document.Add(new Paragraph("Relatório gerado automaticamente.")

@@ -14,11 +14,11 @@ namespace Homes2
         SqlCommand cmd = new SqlCommand();
         public String msg = "";
 
-        public CadastroDespesa(String categoria, String valor)
+        public CadastroDespesa(String categoria, String valor,string data)
         {
 
             cmd.CommandText = "insert into despesas (categoria, valor,data) values(@categoria,@valor,@data)";
-            DateTime data = DateTime.Now;
+
             cmd.Parameters.AddWithValue("@categoria", categoria);
             cmd.Parameters.AddWithValue("@valor", valor);
             cmd.Parameters.AddWithValue("@data", data);

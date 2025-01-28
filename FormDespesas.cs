@@ -29,7 +29,7 @@ namespace Homes2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            CadastroDespesa cd = new CadastroDespesa(cbCategoria.Text, txtValor.Text);
+            CadastroDespesa cd = new CadastroDespesa(cbCategoria.Text, txtValor.Text,dtDespesa.Text);
             MessageBox.Show(cd.msg);
             cbCategoria.Text = "";
             txtValor.Text = "";
